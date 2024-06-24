@@ -1,10 +1,10 @@
-import { PageNotFound } from "@/components/pages";
 import { AnimatedLayout } from "@/components/ui";
+import { ComingSoon } from "@/components/pages";
 
-export default function NotFound() {
+export default function HealthHome() {
   return (
     <AnimatedLayout>
-      <PageNotFound />
+      <ComingSoon />
     </AnimatedLayout>
   );
 }

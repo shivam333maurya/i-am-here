@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { CONSTANTS } from "../../utils/constant";
+import { CONSTANTS } from "../../../utils/constant";
 
-const Layout: React.FC = () => {
+const LayoutNews: React.FC = () => {
   const { LAYOUT_CONFIG_PUBLIC } = CONSTANTS;
   return (
     <div>
@@ -21,4 +21,4 @@ const Layout: React.FC = () => {
   );
 };
 
-export { Layout };
+export { LayoutNews };

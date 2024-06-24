@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 
 const LoginPage = () => {
   return (
-    <motion.div
-      className="flex justify-center items-center w-full h-screen bg-gray-900"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <motion.div className="flex justify-center items-center w-full">
       <form className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-white text-center text-xl font-bold mb-4">Login</h2>
         <div className="mb-4">

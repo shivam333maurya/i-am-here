@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Layout } from "@/components";
+import { AnimatePresence } from "framer-motion";
+import { AnimatedLayout } from "@/components/ui";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-900`}>
-        <Layout />
-        <div className="min-h-[calc(100vh-40px)] flex justify-center items-center">
+        <div
+          //  className="min-h-[calc(100vh-48px)] "
+          className="min-h-screen flex items-center justify-center"
+        >
           {children}
         </div>
       </body>

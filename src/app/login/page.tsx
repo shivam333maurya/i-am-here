@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import { LoginPage } from "@/components/pages";
+import { AnimatedLayout } from "@/components/ui";
 
 export default function Login() {
   return (
-    <Fragment>
+    <AnimatedLayout>
       <LoginPage />
-    </Fragment>
+    </AnimatedLayout>
   );
 }
