@@ -19,10 +19,7 @@ export default function MusicLayout({
     <Fragment>
       <div className="flex items-center flex-col">
         <LayoutMusic />
-        <div
-          //  className="min-h-[calc(100vh-48px)] "
-          className="min-h-[calc(100vh-48px)] flex items-center justify-center"
-        >
+        <div className="min-h-[calc(100vh-48px)] flex items-center justify-center">
           {children}
         </div>
       </div>
