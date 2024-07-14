@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui";
 import { CONSTANTS } from "@/utils/constant";
-import axios from "axios";
 
 const meetingDetails = {
   topic: "Interview",
@@ -21,8 +20,6 @@ const meetingDetails = {
     meeting_authentication: false, // No authentication require
   },
 };
-const zoomTokenUrl = "https://zoom.us/oauth/token";
-const zoomApiUrl = "https://api.zoom.us/v2";
 
 const HomeNavigation = () => {
   const router = useRouter();
@@ -31,48 +28,7 @@ const HomeNavigation = () => {
     router.push(link);
   };
 
-  const getToken = async () => {
-    try {
-      const response = await axios.post(
-        zoomTokenUrl,
-        {},
-        {
-          params: {
-            grant_type: "client_credentials",
-          },
-          auth: {
-            username: process.env.CLIENT_ID || "",
-            password: process.env.CLEINT_SECRET_KEY || "",
-          },
-        }
-      );
-      return response.data.access_token;
-    } catch (error) {
-      console.error("Error getting Zoom access token:", error);
-    }
-  };
-
-  const generateZoomlink = async () => {
-    try {
-      const accessToken = await getToken();
-
-      const response = await axios.post(
-        `${zoomApiUrl}/users/me/meetings`,
-        meetingDetails,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-
-      const { join_url, start_url } = response.data;
-      return { zoomLink: join_url, startLink: start_url };
-    } catch (error) {
-      console.error("Error creating Zoom meeting:", error);
-    }
-  };
-
+  console.log(process.env.CLIENT_ID);
   return (
     <motion.div className="flex gap-4 flex-wrap justify-center space-x-4 space-y-4 p-4 cursor-default">
       {CONSTANTS.HOME_CARD_DATA.map((card, index) => (
