@@ -6,7 +6,6 @@ export default function Welcome() {
       <div className="h-full flex flex-col">
         <WelcomePage />
         <HomeNavigation />
-        {/* <TestModule /> */}
       </div>
     </AnimatedLayout>
   );

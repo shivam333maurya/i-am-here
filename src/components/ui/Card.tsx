@@ -10,7 +10,7 @@ const Card = ({
   imageUrl,
   link,
   children,
-  onClick,
+  onClick = () => {},
 }: any) => {
   return (
     <motion.div
@@ -41,7 +41,7 @@ const Card = ({
       {link && description && (
         <div className="px-6 py-4">
           <Link
-            href={link}
+            href={"#"}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Learn More

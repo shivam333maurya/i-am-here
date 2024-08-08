@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { LayoutMusic } from "@/components/layout";
+import { LayoutHealth } from "@/components/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function HealthLayout({
   return (
     <Fragment>
       <div className="flex items-center flex-col">
-        <LayoutMusic />
+        <LayoutHealth />
         <div
           //  className="min-h-[calc(100vh-48px)] "
           className="min-h-[calc(100vh-48px)] flex items-center justify-center"

@@ -3,13 +3,13 @@ import React from "react";
 import { CONSTANTS } from "../../../utils/constant";
 
 const LayoutHealth: React.FC = () => {
-  const { LAYOUT_CONFIG_PUBLIC } = CONSTANTS;
+  const { LAYOUT_CONFIG } = CONSTANTS;
   return (
     <div>
       <header>
         <nav className="py-3 px-4">
           <ul className="flex gap-4 justify-end">
-            {LAYOUT_CONFIG_PUBLIC.map((key) => (
+            {LAYOUT_CONFIG.HEALTH.map((key) => (
               <li key={`${key.title}}`} className="text-gray-300 ">
                 <Link href={key.path}>{key.title}</Link>
               </li>

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { LayoutMusic } from "@/components/layout";
+import { LayoutLifeStyle } from "@/components/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function LifeStyleLayout({
   return (
     <Fragment>
       <div className="flex items-center flex-col">
-        <LayoutMusic />
+        <LayoutLifeStyle />
         <div className="min-h-[calc(100vh-48px)] flex items-center justify-center">
           {children}
         </div>

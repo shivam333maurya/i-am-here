@@ -1,32 +1,191 @@
 export const CONSTANTS = {
-  LAYOUT_CONFIG_PUBLIC: [
-    {
-      title: "Home",
-      subtitle: "",
-      name: "",
-      path: "/",
-    },
-    {
-      title: "Login",
-      subtitle: "",
-      name: "Login",
-      path: "/login",
-    },
-    {
-      title: "Sign-Up",
-      subtitle: "",
-      name: "Signup",
-      path: "/sign-up",
-    },
-  ],
-  LAYOUT_CONFIG_PRIVATE: [
-    {
-      title: "Home",
-      subtitle: "",
-      name: "Home",
-      path: "/",
-    },
-  ],
+  LAYOUT_CONFIG: {
+    SUPPORT: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/support",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    HEALTH: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/health",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    NEWS: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/news",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    VIDEOS: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/videos",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    LIFE_STYLE: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/life-style",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    MUSIC: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/music",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    WE: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/we",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+    GAMES: [
+      {
+        title: "Home",
+        subtitle: "",
+        name: "",
+        path: "/games",
+        public: true,
+      },
+      {
+        title: "Login",
+        subtitle: "",
+        name: "Login",
+        path: "/login",
+        public: true,
+      },
+      {
+        title: "Sign-Up",
+        subtitle: "",
+        name: "Signup",
+        path: "/sign-up",
+        public: true,
+      },
+    ],
+  },
+
   CARD_DUMMY_DATA: [
     {
       title: "Card Title 1",
@@ -47,54 +206,61 @@ export const CONSTANTS = {
       link: "#",
     },
   ],
-  HOME_CARD_DATA: [
+
+  APP_NAV_DATA: [
     {
       title: "Health",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/health",
+      path: "/health",
     },
     {
       title: "Life Style",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/life-style",
+      path: "/life-style",
     },
     {
       title: "Who we are",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/we",
+      path: "/we",
     },
     {
       title: "Support",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "support",
+      path: "support",
     },
     {
       title: "Videos",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/videos",
+      path: "/videos",
     },
     {
       title: "Music",
       description: "This is a description for news page",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/music",
+      path: "/music",
     },
     {
       title: "News",
       description: "This is a description for news page",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/news",
+      path: "/news",
+    },
+    {
+      title: "Chats",
+      description: "This is a description for chats",
+      imageUrl: "https://via.placeholder.com/300x200",
+      path: "/chats",
     },
     {
       title: "GPT",
       description: "This is a description for card 1.",
       imageUrl: "https://via.placeholder.com/300x200",
-      link: "/genarative.ai",
+      path: "/genarative.ai",
     },
   ],
 };

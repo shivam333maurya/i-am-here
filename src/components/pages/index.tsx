@@ -5,4 +5,5 @@ export { ChatGPTComponent } from "./chat-gpt";
 export { HomeNavigation } from "./home-navigation";
 export { ComingSoon } from "./coming-soon";
 export { TestModule } from "./test-modules";
+export { Socket } from "./chats";
 export { PageNotFound } from "./page-not-found";
