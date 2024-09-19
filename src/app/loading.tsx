@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Loading: React.FC = () => {
   return (
-    <div className="fixed app-loader inset-0 flex gap-2 items-center justify-center bg-white bg-opacity-75 z-50">
+    <div className="absolute bg-gradient-to-b from-[rgb(var(--background-start-rgb))] to-[rgb(var(--background-end-rgb))] inset-0 flex gap-2 items-center justify-center bg-opacity-75 z-50">
       <motion.div
-        className="spinner-border inline-block w-8 h-8 border-4 rounded-full"
+        className="inline-block w-8 h-8 border-4 rounded-full border-t-blue-500 border-transparent"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 1 }}
       />
